@@ -1,13 +1,11 @@
 import React from 'react';
 import NavBar from './Header';
-import IncidentListContainer from '../containers/IncidentListContainer';
-import AAAContainer from '../containers/AAAContainer';
+import CommentListContainer from '../containers/CommentListContainer';
 
 const Main = () => (
     <div>
         <NavBar />
-        <AAAContainer />
-        {/* <IncidentListContainer /> */}
+         <CommentListContainer /> 
     </div>
 )
 

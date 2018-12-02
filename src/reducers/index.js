@@ -1,10 +1,8 @@
 import { combineReducers } from 'redux';
-import IncidentReducer from './IncidentReducer';
-import AAAReducer from './AAAReducer';
+import CommentReducer from './CommentReducer';
 
 const rootReducer = combineReducers({
-  IncidentReducer,
-  AAAReducer
+  CommentReducer
 })
 
 export default rootReducer;

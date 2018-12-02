@@ -1,12 +1,12 @@
 import { URL } from '../constants'
-export const RECEIVE_INCIDENTS = 'RECEIVE_INCIDENTS';
+export const RECEIVE_COMMENT = 'RECEIVE_COMMENT';
 
-export const receivedIncidents = json => ({
-  type: RECEIVE_INCIDENTS,
+export const receivedComment = json => ({
+  type: RECEIVE_COMMENT,
   json: json,
 });
 
-export function fetchIncidents() {
+export function fetchComment() {
   return function (dispatch) {
     return fetch(URL)
       .then(
@@ -14,7 +14,7 @@ export function fetchIncidents() {
         error => console.log('An error occurred.', error),
       )
       .then((json) => {
-        dispatch(receivedIncidents(json));
+        dispatch(receivedComment(json));
       },
       );
   };

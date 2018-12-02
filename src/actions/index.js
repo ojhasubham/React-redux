@@ -1,2 +1,1 @@
-export * from './IncidentAction';
-export * from './AAAAction'
+export * from './CommentAction';

@@ -14,7 +14,7 @@ const NavBar = ({}) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" color="inherit" >
-            Tiny Admin
+             Admin
           </Typography>
         </Toolbar>
       </AppBar>
